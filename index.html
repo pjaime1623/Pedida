@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Una pregunta para ti</title>
+    <style>
+        body { margin: 0; }
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato&display=swap');
+        .portada-container {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1542042161-d10f8a84d872?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover; background-position: center; height: 100vh;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            text-align: center; color: white; font-family: 'Playfair Display', serif;
+        }
+        .portada-container h1 { font-size: 3.5rem; margin: 0; }
+        .portada-container p { font-family: 'Lato', sans-serif; font-size: 1.2rem; margin-top: 10px; }
+        .seccion { padding: 50px 20px; text-align: center; font-family: 'Lato', sans-serif; max-width: 800px; margin: auto; }
+        .seccion h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 40px; }
+        .timeline { position: relative; margin: 0 auto; }
+        .timeline::after { content: ''; position: absolute; width: 6px; background-color: #f1f1f1; top: 0; bottom: 0; left: 50%; margin-left: -3px; }
+        .timeline-item { padding: 10px 40px; position: relative; width: 50%; }
+        .timeline-item.left { left: 0; }
+        .timeline-item.right { left: 50%; }
+        .timeline-item::after { content: ''; position: absolute; width: 25px; height: 25px; right: -17px; background-color: white; border: 4px solid #FF6B6B; top: 15px; border-radius: 50%; z-index: 1; }
+        .right::after { left: -16px; }
+        .content { padding: 20px 30px; background-color: #f9f9f9; position: relative; border-radius: 6px; text-align: left; }
+        .content h3 { font-family: 'Playfair Display', serif; }
+        .galeria-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; padding: 10px; }
+        .galeria-grid img { width: 100%; height: 100%; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+        .galeria-grid img:hover { transform: scale(1.05); }
+        .pregunta-container { background-color: #FF6B6B; color: white; padding: 80px 20px; text-align: center; font-family: 'Lato', sans-serif; }
+        .pregunta-container h2 { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 20px; }
+        .pregunta-container p { font-size: 1.2rem; max-width: 600px; margin: 0 auto 40px auto; }
+        .boton-si { display: inline-block; background-color: white; color: #FF6B6B; font-size: 1.5rem; font-weight: bold; padding: 20px 40px; border-radius: 50px; text-decoration: none; transition: transform 0.3s ease, background-color 0.3s; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+        .boton-si:hover { transform: scale(1.1); background-color: #f1f1f1; }
+    </style>
+</head>
+<body>
+
+    <div class="portada-container">
+        <h1>Para María José</h1>
+        <p>Tengo algo muy importante que preguntarte...</p>
+    </div>
+
+    <div class="seccion">
+        <h2>El Comienzo de Todo</h2>
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="content"><h3>16 de Abril, 2025</h3><p>El día que te escribi. No tenía idea de que podia pasar y cuando Edwin me paso tu numero si me puse nervioso porque no sabia a la gran mujer hermosa que me esperaba.</p></div>
+            </div>
+            <div class="timeline-item right">
+                <div class="content"><h3>01 de Mayo, 2025</h3><p>Nuestra primera cita.  Te soy sincero los nervios, de la primera vez que te fui a traer me consumian al igual que las risas y esa sensación de que el tiempo se detuvo. Supe que eras alguien especial.</p></div>
+            </div>
+            <div class="timeline-item left">
+                <div class="content"><h3>18 de Mayo, 2025</h3><p>Nuestra ida al zoologico fue lo mejor y que estuvieramos juntos hasta el punto de irnos a conocer a un lugar mas privado, y desde ese momento descubri que cada momento a tu lado es magico. </p></div>
+            </div>
+            <div class="timeline-item right">
+                <div class="content"><h3>Hoy</h3><p>Cada día a tu lado ha sido mejor que el anterior, con las notas, los mensajes, los regalos y los momentos juntos, me ha traído hasta este momento...</p></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="seccion">
+        <h2>Nuestra Colección de Sonrisas</h2>
+        <div class="galeria-grid">
+            <img src="https://ik.imagekit.io/qevpkmmlv/Fotos%20pmejjrap/IMG-20250518-WA0110(2).jpg" alt="Recuerdo 1">
+            <img src="https://ik.imagekit.io/qevpkmmlv/Fotos%20pmejjrap/IMG-20250518-WA0106(1).jpg" alt="Recuerdo 2">
+            <img src="https://ik.imagekit.io/qevpkmmlv/Fotos%20pmejjrap/IMG-20250518-WA0068.jpg" alt="Recuerdo 3">
+            <img src="https://ik.imagekit.io/qevpkmmlv/Fotos%20pmejjrap/IMG-20250518-WA010.jpg" alt="Recuerdo 4">
+            <img src="https://ik.imagekit.io/qevpkmmlv/Fotos%20pmejjrap/IMG-20250518-WA0112.jpg" alt="Recuerdo 5">
+            <img src="https://ik.imagekit.io/qevpkmmlv/Fotos%20pmejjrap/IMG-20250518-WA0102(1).jpg" alt="Recuerdo 6">
+        </div>
+    </div>
+    
+    <div class="pregunta-container">
+        <p>He recordado nuestro pasado y he celebrado nuestro presente. Ahora solo puedo pensar en un futuro juntos. Por eso...</p>
+        <h2>¿Quieres ser mi novia?</h2>
+        <a href="#" class="boton-si" onclick="alert('¡¡¡DIJO QUE SÍ!!! ¡Hagamos de esta historia de amor sea unica e inolvidable!')">¡SÍ, QUIERO!</a>
+    </div>
+
+</body>
+</html>
